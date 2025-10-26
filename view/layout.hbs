@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+
+    <!--    If I want to use boostrap (a css framework) I can request its files with these tags-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    <!--By adding this, I am able to use google fonts to style my website with fonts made by Google!
+    Whenever I want to add fonts, I need to do it through css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
+          rel="stylesheet">
+
+    <!--    We need to add our styles after boostrap link and script
+    Because I set a static path for the public folder, I can look for the stylesheet by just
+    beggining the path from public.-->
+    <link rel="stylesheet" href="stylesheets/feedback_Style.css" type="text/css">
+</head>
+<body class="m-3">
+<!--This body is for the template to replace its value with other template, like php or Django-->
+{{{ body }}}
+
+
+<hr>
+<p>A project for web Client and Server Programming</p>
+</body>
+</html>

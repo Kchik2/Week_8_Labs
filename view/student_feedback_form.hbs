@@ -1,0 +1,54 @@
+<!--Boostrap allows to style websites by defining pre-established classes to tags
+    Different classes can be set in one tag by typing space in the class element-->
+
+<!--The input tag allows to request something to users!!!
+Depending on the type element, different values can be requested.
+ The label tag allows to show how users should use an input value
+  Forms allows users to give information to the inputs and send it to the server
+  with a submit button!-->
+<div class="bg-primary-subtle mb-4 p-4 rounded">
+    <h1 class="header text-center p-3">Please provide feedback, you may do so anonymously.</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Instructions</h2>
+        <p>As one of our students, is your opinion matter to us.</p>
+        <p>Please share your thoughts, ideas and feedback in this form.</p>
+        <p>If you would like for us to follow up with you. Please type your contact information</p>
+
+    </div>
+
+    <div class="col-md-7">
+<!-- POST method is used in forms instead of GET because POST is used anytime a request is made
+        about updating the server database. Also, is more secure because POST info can be encrypted-->
+        <form action="/submit-feedback" method="POST">
+
+
+            <!--  Text allows to type text  -->
+            <label class="form-label" for="user_name">Name:</label>
+            <input class="form-control" id="user_name" type="text" name="user_name" placeholder="Enter your name">
+
+
+            <!--    password allows to type password which letters are hidden with dots-->
+            <br><label class="form-label" for="user_email">Email:</label>
+            <input class="form-control" id="user_email" type="email" name="user_email">
+
+            <br><label class="form-label" for="comments">Comments: </label>
+            <textarea class="form-control" id="comments" name="comments" required></textarea>
+
+            <p class="mx-auto">Are you a current student?</p>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="current_student" value="yes" name="current_student"
+                       checked="checked">
+                <label class="form-check-label" for="current_student">Yes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="non_current_student" value="no" name="current_student">
+                <label class="form-check-label" for="non_current_student">No</label>
+            </div>
+            <br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+</div>

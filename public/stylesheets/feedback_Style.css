@@ -1,0 +1,17 @@
+body{
+    background-color: #aeaec4;
+    /*This is a google font*/
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+}
+/*Font Style for conference_form!*/
+.conf_form{
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+}
