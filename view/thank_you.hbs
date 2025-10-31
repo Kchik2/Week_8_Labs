@@ -7,4 +7,12 @@
 <h3>Comments: {{comments}}</h3>
 <h3>Current status: {{current_student}}</h3>
 
+<h2>Departments to contact.</h2>
+
+<ul>
+    {{#each departmentList}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+
 <p><a href="/">Back to home page</a></p>
